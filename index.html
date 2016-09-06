@@ -11,7 +11,7 @@
 	<h1> {{ tutorialObject.title }} </h1>
 	<h2> {{ tutorialObject.subTitle }} </h2>
 	<p> Number: {{2 + 2}}</p>
-	<p> String: {{tutorialObject.firstName + " " + tutorialObject.lastName}}</p>
+	<p> String: {{tutorialObject.firstName + " " + tutorialObject.lastName | uppercase}}</p>
 	<p><b>Binding: {{tutorialObject.bindOutput }}</b></p> <!-- the pipe (|) add the filter option, parameters are then added using the colon, so here we add the pound instead of the dollar and four digits instead of two -->
 
 	<label>First Name:</label>
